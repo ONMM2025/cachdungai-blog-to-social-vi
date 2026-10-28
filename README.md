@@ -1,42 +1,56 @@
 # Tái sử dụng bài blog thành nội dung mạng xã hội
 
-> **Một repository, một skill.** Gói workflow độc lập bằng tiếng Việt để dùng với AI Agent.
+> **Một repository, một skill.** Workflow độc lập bằng tiếng Việt cho AI Agent.
 >
 > **Watermark:** [https://cachdungai.blog/](https://cachdungai.blog/)
 
 ## Giới thiệu
 
-Chuyển bài blog tiếng Việt hoặc tài liệu dài thành nội dung riêng cho từng nền tảng mà vẫn giữ đúng dữ kiện và ý chính. Dùng khi phân phối bài đã xuất bản lên fan page Facebook và các kênh xã hội khác.
+Chuyển bài blog đã có thành nội dung Facebook, carousel hoặc brief video ngắn. Dùng để phân phối một nguồn; không dùng để soạn bài Facebook mới từ chủ đề.
 
-Skill nằm ở file `SKILL.md` ngay thư mục gốc. Mở file để xem đầy đủ phạm vi, đầu vào, quy trình, định dạng đầu ra, giới hạn và ví dụ.
+Mở **SKILL.md** để xem đầu vào, quy trình, đầu ra, giới hạn và prompt mẫu. Gói cài đặt chứa SKILL.md và giấy phép MIT, không kèm script thực thi.
+
+## Tải gói cài đặt
+
+Tải ZIP sẵn dùng: [blog-to-social-vi.zip](blog-to-social-vi.zip). ZIP có thư mục gốc tên **blog-to-social-vi** và chứa **SKILL.md**, phù hợp để tải lên như một skill riêng.
 
 ## Cách cài
 
 ### Claude.ai
 
-Nén repository này thành ZIP (hoặc tải ZIP của repository từ GitHub), rồi trong Claude mở mục **Skills / Customize → Upload a skill**. Bật skill sau khi tải lên. Tính năng custom Skills và code execution tùy thuộc gói tài khoản và cấu hình workspace.
+1. Nếu Skills chưa hiện, kiểm tra Settings > Capabilities và bật code execution nếu tài khoản/workspace hỗ trợ.
+2. Mở **Customize > Skills**, bấm **+ > Create skill > Upload a skill**.
+3. Chọn tệp **blog-to-social-vi.zip** vừa tải và bật skill sau khi upload.
+
+Khả năng tạo và dùng skill phụ thuộc gói tài khoản, bật code execution và chính sách workspace.
 
 ### Claude Code
 
-Chép `SKILL.md` vào `.claude/skills/blog-to-social-vi/SKILL.md` trong dự án, hoặc `~/.claude/skills/blog-to-social-vi/SKILL.md` để dùng cá nhân. Sau đó yêu cầu Claude dùng skill theo tên hoặc mô tả công việc.
+Chép **SKILL.md** vào **.claude/skills/blog-to-social-vi/SKILL.md** trong dự án hoặc **~/.claude/skills/blog-to-social-vi/SKILL.md** để dùng cá nhân. Gọi bằng **/blog-to-social-vi** hoặc mô tả yêu cầu để Claude tự chọn khi phù hợp.
 
 ### ChatGPT
 
-Nếu tài khoản có mục **Skills**, chọn **Upload from your computer** và tải ZIP của repository này. Nếu chưa có mục Skills, mở `SKILL.md`, sao chép hướng dẫn vào Project instructions hoặc dán vào cuộc trò chuyện để dùng thủ công. Quyền sử dụng Skills trong ChatGPT phụ thuộc gói và thiết lập workspace.
+Skills chỉ xuất hiện ở các tài khoản/workspace đủ điều kiện; hiện trang trợ giúp OpenAI nêu Business, Enterprise, Healthcare và Edu, tùy thiết lập workspace.
+
+1. Mở **Plugins > Plugin Directory > Skills**.
+2. Chọn **Create > Upload from your computer**.
+3. Chọn **blog-to-social-vi.zip**.
+
+Nếu không có mục Skills, mở **SKILL.md** rồi dán nội dung vào yêu cầu hoặc Project instructions nếu có. Đây là cách dùng thủ công, không phải cài skill tự động.
 
 ### Codex
 
-Chép `SKILL.md` vào `.agents/skills/blog-to-social-vi/SKILL.md` trong dự án, rồi yêu cầu Codex dùng skill này.
+Trong repo dự án, chép **SKILL.md** vào **.agents/skills/blog-to-social-vi/SKILL.md**, rồi yêu cầu Codex dùng skill này.
 
 ## Prompt mẫu
 
 “Chuyển bài blog này thành 3 bài Facebook trong một tuần: một bài checklist, một bài kể tình huống người mới hay gặp và một bài dẫn về hướng dẫn đầy đủ. Không lặp caption; CTA đều về URL tôi đưa.”
 
-Để có kết quả sát hơn, gửi thêm mục tiêu, độc giả, tài liệu đầu vào, kênh xuất bản và giới hạn cần giữ. Đọc lại dữ kiện và duyệt nội dung trước khi xuất bản; skill không tự đăng bài thay bạn.
+Gửi thêm mục tiêu, độc giả, tài liệu đầu vào, nền tảng và giới hạn cần giữ để kết quả sát hơn. Kiểm tra dữ kiện và duyệt nội dung trước khi xuất bản.
 
 ## Giấy phép
 
-MIT License — xem file `LICENSE` trong repository.
+MIT License — xem file **LICENSE** trong repository.
 
 ---
 

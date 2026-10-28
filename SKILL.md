@@ -1,13 +1,13 @@
 ---
 name: blog-to-social-vi
-description: Chuyển bài blog tiếng Việt hoặc tài liệu dài thành nội dung riêng cho từng nền tảng mà vẫn giữ đúng dữ kiện và ý chính. Dùng khi phân phối bài đã xuất bản lên fan page Facebook và các kênh xã hội khác.
+description: Chuyển bài blog đã có thành nội dung Facebook, carousel hoặc brief video ngắn. Dùng để phân phối một nguồn; không dùng để soạn bài Facebook mới từ chủ đề.
 ---
 
 # Tái sử dụng bài blog thành nội dung mạng xã hội
 
 ## Mục tiêu
 
-Tăng vòng đời của một ý tưởng bằng cách chuyển nó thành các nội dung có góc nhìn riêng cho từng kênh. Không rút gọn bài blog thành nhiều bản sao rồi đăng giống hệt nhau.
+Tăng vòng đời bài blog bằng cách tạo asset riêng cho Facebook feed, carousel/checklist và brief video ngắn. Nếu người dùng yêu cầu nền tảng khác, xác nhận định dạng cần có hoặc ghi rõ phần thích nghi còn mang tính khái quát; không nhận là đã tối ưu đặc thù nền tảng khi chưa có quy tắc và dữ liệu phù hợp.
 
 ## Đầu vào
 
@@ -43,7 +43,9 @@ Tạo số lượng được yêu cầu. Nếu chưa chỉ định, đề xuất
 
 - 2 bài Facebook với góc khác nhau.
 - 1 nội dung dạng carousel hoặc checklist.
-- 1 ý tưởng video ngắn, không viết đầy đủ kịch bản nếu người dùng chưa yêu cầu.
+- 1 brief video ngắn, không viết kịch bản hoàn chỉnh nếu người dùng chưa yêu cầu.
+
+Mặc định chỉ tạo định dạng nêu trên; chỉ thêm kênh khác khi người dùng chỉ rõ.
 
 Kết thúc bằng checklist kiểm tra claim, link và sự trùng lặp.
 
